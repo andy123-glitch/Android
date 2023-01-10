@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Joueur">
+
+    <TextView
+        android:id="@+id/txtListePlayer"
+        android:layout_width="413dp"
+        android:layout_height="312dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <EditText
+        android:id="@+id/edtxtNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtListePlayer"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jouer"
+        android:onClick="OnClickBtnOk"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtNumber"
+        app:layout_constraintVertical_bias="0.386" />
+
+    <TextView
+        android:id="@+id/txtquestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rentrer le chiffre correspondant au joueur que vous voulez jouer"
+        app:layout_constraintBottom_toTopOf="@+id/edtxtNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtListePlayer" />
+
+    <TextView
+        android:id="@+id/txtTitreplayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Joueur :"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtListePlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPointpJoueur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Point : 0"
+        app:layout_constraintBottom_toTopOf="@+id/txtquestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtListePlayer" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

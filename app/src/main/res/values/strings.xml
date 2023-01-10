@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Le jeu</string>
+    <dimen name="font_size">20sp</dimen>
+    <dimen name="font_size_title">50sp</dimen>
+    <dimen name="space_buttun">40sp</dimen>
+</resources>
